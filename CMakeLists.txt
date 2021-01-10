@@ -41,22 +41,19 @@ juce_add_plugin(CrossAudioPluginExample
     # VERSION ...                               # Set this if the plugin version is different to the project version
     # ICON_BIG ...                              # ICON_* arguments specify a path to an image file to use as an icon for the Standalone
     # ICON_SMALL ...
-    COMPANY_NAME  "J. Bitzer AT Jade Hochschule"  # Specify the name of the plugin's author
+    COMPANY_NAME  "Jade Hochschule"             # Specify the name of the plugin's author
     # IS_SYNTH TRUE/FALSE                       # Is this a synth or an effect?
     # NEEDS_MIDI_INPUT TRUE/FALSE               # Does the plugin need midi input?
     # NEEDS_MIDI_OUTPUT TRUE/FALSE              # Does the plugin need midi output?
     # IS_MIDI_EFFECT TRUE/FALSE                 # Is this plugin a MIDI effect?
     # EDITOR_WANTS_KEYBOARD_FOCUS TRUE/FALSE    # Does the editor need keyboard focus?
-    COPY_PLUGIN_AFTER_BUILD TRUE               # Should the plugin be installed to a default location after building?
+    COPY_PLUGIN_AFTER_BUILD TRUE                # Should the plugin be installed to a default location after building?
     PLUGIN_MANUFACTURER_CODE IHAJ               # A four-character manufacturer id with at least one upper-case character
     PLUGIN_CODE crau                            # A unique four-character plugin id with at least one upper-case character
     FORMATS AU VST3 Standalone                  # The formats to build. Other valid formats are: AAX Unity VST AU AUv3
     PRODUCT_NAME "CrossAudioPluginExample")     # The name of the final executable, which can differ from the target name
 #endif ()
 
-#   JUCE_VST3_COPY_DIR /home/bitzer/AudioDev/PlugIns/
-#    JUCE_AU_COPY_DIR /home/bitzer/AudioDev/PlugIns/
- 
 
 # `juce_generate_juce_header` will create a JuceHeader.h for a given target, which will be generated
 # into your build tree. This should be included with `#include <JuceHeader.h>`. The include path for
@@ -104,6 +101,7 @@ target_compile_definitions(CrossAudioPluginExample
 # dependencies are resolved automatically, so `juce_core`, `juce_events` and so on will also be
 # linked automatically. If we'd generated a binary data target above, we would need to link to it
 # here too. This is a standard CMake command.
+
 
 target_link_libraries(CrossAudioPluginExample
     PRIVATE
