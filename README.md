@@ -1,7 +1,9 @@
-# CrossPlugInTest
+# CrossDevPlugInTest
 
-This is a first Test for a cross plattform development plugin with CMAKE
+This is a first Test for a cross platform development plugin with CMAKE.
 
-It is based on the audio plugin example of JUCE (nothing special, just testing to get it done on all plattforms)
+You should not even look at the code. It is based on the audio plugin example of JUCE (nothing special, just testing to see, if it works on all platforms).
+
+
 
 
